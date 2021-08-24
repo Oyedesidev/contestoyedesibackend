@@ -14,6 +14,7 @@ require("dotenv").config();
 const authRoutes = require("./routes/auth");
 const userRoutes = require("./routes/user");
 const contestRoutes = require("./routes/contest");
+const refrenceRoutes = require("./routes/refrence");
 const categoryRoutes = require("./routes/category");
 const productRoutes = require("./routes/product");
 // const braintreeRoutes = require("./routes/braintree");
@@ -41,6 +42,7 @@ app.use("/api", userRoutes);
 app.use("/api", categoryRoutes);
 app.use("/api", productRoutes);
 app.use("/api", contestRoutes);
+app.use("/api", refrenceRoutes);
 
 // app.use("/api", braintreeRoutes);
 app.use("/api", orderRoutes);
