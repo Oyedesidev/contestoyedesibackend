@@ -5,7 +5,7 @@ const Refrence = require("../models/refrence");
 const { errorHandler } = require("../helpers/dbErrorHandler");
 
 exports.create = (req, res) => {
-  const refrence = new Contest(req.body);
+  const refrence = new Refrence(req.body);
 
   refrence.save((err, data) => {
     if (err) {
