@@ -10,7 +10,10 @@ exports.create = (req, res) => {
   contest.save((err, data) => {
     if (err) {
       return res.status(400).json({
-        error: errorHandler(err),
+        // error: errorHandler(err),
+
+        error: "You already Attempt Contest, Thank You for Visiting again.",
+        
       });
     }
     res.json({ data });
