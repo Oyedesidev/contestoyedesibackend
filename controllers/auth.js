@@ -11,10 +11,10 @@ exports.signup = (req, res) => {
     if (err) {
       return res.status(400).json({
         // error: errorHandler(err)
-        error: "Email is taken",
+        error: "Email or Mobile is already taken",
       });
     }
-    user.salt = undefined;
+    user.salt = undefined ;
     user.hashed_password = undefined;
     res.json({
       user,
