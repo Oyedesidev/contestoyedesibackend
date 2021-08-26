@@ -3,6 +3,24 @@ const mongoose = require("mongoose");
 
 const refrencesSchema = new mongoose.Schema(
   {
+
+    name: {
+      type: String,
+      trim: true,
+      required: true,
+      maxlength: 52,
+    },
+    mobile: {
+      type: Number,
+      required: true,
+      unique: true,
+      maxlength: 10,
+    },
+    email: {
+      type: String,
+      trim: true,
+      required: true,
+    },
     refname1: {
       type: String,
       trim: true,
