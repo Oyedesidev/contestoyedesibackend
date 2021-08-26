@@ -13,7 +13,7 @@ const refrencesSchema = new mongoose.Schema(
     mobile: {
       type: Number,
       required: true,
-      unique: true,
+      // unique: true,
       maxlength: 10,
     },
     email: {

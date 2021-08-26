@@ -12,13 +12,14 @@ const contestSchema = new mongoose.Schema(
     mobile: {
       type: Number,
       required: true,
-      unique: true,
+      // unique: true,
       maxlength: 10,
     },
     email: {
       type: String,
       trim: true,
       required: true,
+      unique: true
     },
     zipcode: {
       type: Number,
@@ -30,6 +31,7 @@ const contestSchema = new mongoose.Schema(
       trim: true,
       unique: true,
       required: true,
+      maxlength: 32,
     },
     photo_name: {
       type: String,
